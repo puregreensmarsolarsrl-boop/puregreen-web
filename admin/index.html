@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Panel · Puregreen Smart Solar</title>
+<style>body{font:16px/1.6 Arial,sans-serif;margin:0;background:#f5f9f7;color:#173128}#estado{max-width:640px;margin:12vh auto;padding:32px;background:white;border-radius:20px}a{color:#0d7a48}</style></head>
+<body><div id="estado" role="status"><h1>Panel Puregreen</h1><p id="mensaje">Preparando el acceso…</p><a href="/">Volver a la web</a></div>
+<script>window.CMS_MANUAL_INIT=true;
+async function start(){
+ const msg=document.getElementById('mensaje');
+ try{
+  const response=await fetch('config.yml',{cache:'no-store'});if(!response.ok)throw Error();
+  const config=await response.json();
+  if(config.backend.repo.includes('CAMBIAR_')){msg.textContent='El panel aún necesita la conexión inicial a GitHub y Netlify. Sigue la guía entregada con la web. Los visitantes pueden consultar la página normalmente.';return;}
+  const script=document.createElement('script');script.src='https://unpkg.com/decap-cms@3.9.0/dist/decap-cms.js';
+  script.onerror=()=>msg.textContent='No se pudo cargar el panel. Comprueba tu conexión y vuelve a intentarlo.';
+  script.onload=()=>{try{CMS.init({config:{...config,load_config_file:false}});document.getElementById('estado').remove();}catch(e){msg.textContent='No se pudo iniciar el panel. Revisa la configuración de acceso.';}};
+  document.head.append(script);
+ }catch(e){msg.textContent='No se pudo leer la configuración del panel. Recarga la página o revisa los archivos publicados.';}
+}start();</script></body></html>

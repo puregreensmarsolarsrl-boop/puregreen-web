@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Puregreen Smart Solar SRL - Soluciones de energía solar en República Dominicana. Paneles solares, inversores, baterías, proyectos residenciales y comerciales.">
+  <meta name="theme-color" content="#071b14">
+  <title>{{general.texto1}}</title>
+
+  <!-- =========================================================
+       PUREGREEN SMART SOLAR SRL
+       ARCHIVO 100% EDITABLE
+       Puedes modificar textos, colores, teléfonos y secciones.
+       ========================================================= -->
+
+  <style>
+    :root{
+      /* ===== COLORES PRINCIPALES: CAMBIA AQUÍ ===== */
+      --green:#0d7a48;
+      --green-2:#13a05f;
+      --lime:#93d23d;
+      --yellow:#ffc31f;
+      --dark:#071b14;
+      --dark-2:#0d2a20;
+      --white:#ffffff;
+      --soft:#f5f9f7;
+      --text:#173128;
+      --muted:#6c7c75;
+      --line:#dce7e1;
+      --shadow:0 20px 55px rgba(7,27,20,.12);
+      --radius:24px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.55;
+    }
+
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+    .container{width:min(1180px,92%);margin:auto}
+    .section{padding:88px 0}
+    .soft{background:var(--soft)}
+    .dark{background:var(--dark);color:#fff}
+    .tag{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 13px;border-radius:999px;
+      background:#e9f7ef;color:var(--green);
+      font-size:13px;font-weight:800;letter-spacing:.02em
+    }
+    .section-head{max-width:780px;margin:0 auto 44px;text-align:center}
+    .section-head h2{
+      margin:13px 0 12px;
+      font-size:clamp(30px,4.5vw,50px);
+      line-height:1.05;color:var(--dark)
+    }
+    .section-head p{margin:0;color:var(--muted);font-size:17px}
+
+    /* =================== HEADER =================== */
+    .topbar{
+      background:var(--dark);color:#d9e8e1;
+      padding:8px 0;font-size:13px
+    }
+    .topbar-inner{
+      display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap
+    }
+
+    header.site-header{
+      position:sticky;top:0;z-index:999;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(220,231,225,.85)
+    }
+    .nav{
+      min-height:78px;display:flex;align-items:center;
+      justify-content:space-between;gap:22px
+    }
+    .logo{
+      display:flex;align-items:center;gap:11px;
+      font-weight:900;color:var(--dark)
+    }
+    .logo-symbol{
+      width:48px;height:48px;border-radius:15px;
+      background:linear-gradient(135deg,var(--green),var(--lime));
+      display:grid;place-items:center;color:#fff;font-size:25px;
+      box-shadow:0 10px 25px rgba(13,122,72,.23)
+    }
+    .logo-text strong{display:block;font-size:17px;line-height:1.05}
+    .logo-text small{display:block;color:var(--green);margin-top:4px;font-weight:800}
+    .menu{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:800}
+    .menu a:hover{color:var(--green)}
+    .menu .nav-cta{
+      color:#fff;background:var(--green);padding:12px 17px;border-radius:12px
+    }
+
+    /* =================== HERO =================== */
+    .hero{
+      min-height:700px;
+      display:flex;align-items:center;
+      background:
+        radial-gradient(circle at 10% 20%,rgba(147,210,61,.16),transparent 27%),
+        radial-gradient(circle at 90% 10%,rgba(255,195,31,.18),transparent 24%),
+        linear-gradient(145deg,#f8fcf9 0%,#ffffff 65%);
+      overflow:hidden;
+      position:relative
+    }
+    .hero-grid{
+      display:grid;grid-template-columns:1.12fr .88fr;
+      gap:52px;align-items:center;padding:85px 0
+    }
+    .hero h1{
+      font-size:clamp(45px,6.6vw,76px);
+      line-height:.98;letter-spacing:-.045em;
+      margin:18px 0 22px;color:var(--dark)
+    }
+    .hero h1 span{color:var(--green)}
+    .hero-copy{font-size:19px;color:var(--muted);max-width:720px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{
+      border:0;border-radius:14px;padding:15px 21px;
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      font-weight:900;cursor:pointer;transition:.22s
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-green{background:var(--green);color:#fff}
+    .btn-yellow{background:var(--yellow);color:#171d19}
+    .btn-outline{border:1px solid var(--line);background:#fff;color:var(--dark)}
+    .hero-points{
+      display:flex;gap:12px;flex-wrap:wrap;margin-top:31px
+    }
+    .hero-points span{
+      padding:10px 13px;border:1px solid var(--line);
+      background:#fff;border-radius:12px;
+      font-size:13px;font-weight:800;
+      box-shadow:0 8px 22px rgba(7,27,20,.05)
+    }
+
+    .solar-visual{
+      background:linear-gradient(160deg,#08271c 0%,#0d7a48 72%);
+      border-radius:34px;padding:28px;
+      color:#fff;box-shadow:0 32px 75px rgba(7,27,20,.25);
+      position:relative;overflow:hidden
+    }
+    .solar-visual:before{
+      content:"";position:absolute;width:300px;height:300px;
+      border-radius:50%;background:rgba(255,255,255,.06);
+      right:-115px;top:-130px
+    }
+    .sun-orb{
+      width:80px;height:80px;border-radius:50%;
+      background:var(--yellow);box-shadow:0 0 45px rgba(255,195,31,.5);
+      margin-bottom:25px
+    }
+    .panel-array{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:7px;
+      transform:perspective(650px) rotateX(19deg);
+      margin:20px 0 27px
+    }
+    .panel{
+      aspect-ratio:1.3;
+      border:2px solid rgba(255,255,255,.55);
+      background:
+        linear-gradient(90deg,transparent 48%,rgba(255,255,255,.25) 49%,rgba(255,255,255,.25) 51%,transparent 52%),
+        linear-gradient(0deg,transparent 48%,rgba(255,255,255,.25) 49%,rgba(255,255,255,.25) 51%,transparent 52%),
+        linear-gradient(145deg,#0d4a78,#123759);
+      border-radius:5px
+    }
+    .visual-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .visual-stat{
+      background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);
+      border-radius:15px;padding:15px
+    }
+    .visual-stat strong{display:block;font-size:22px}
+    .visual-stat small{color:rgba(255,255,255,.72)}
+
+    /* =================== FEATURE STRIP =================== */
+    .strip{margin-top:-36px;position:relative;z-index:3}
+    .strip-grid{
+      background:#fff;border:1px solid var(--line);border-radius:22px;
+      box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr)
+    }
+    .strip-item{padding:22px;border-right:1px solid var(--line)}
+    .strip-item:last-child{border-right:0}
+    .strip-item strong{display:block;color:var(--dark);font-size:17px}
+    .strip-item span{color:var(--muted);font-size:13px}
+
+    /* =================== ABOUT =================== */
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+    .about-card{
+      min-height:440px;border-radius:30px;padding:32px;
+      background:
+        radial-gradient(circle at 75% 25%,rgba(255,195,31,.35),transparent 22%),
+        linear-gradient(145deg,var(--green),var(--dark));
+      color:#fff;display:flex;flex-direction:column;justify-content:flex-end;
+      box-shadow:var(--shadow)
+    }
+    .about-card h3{font-size:37px;line-height:1.05;margin:0 0 13px}
+    .about-card p{color:#d7e5df;margin:0}
+    .about-copy h2{font-size:clamp(31px,4vw,49px);line-height:1.05;color:var(--dark);margin:15px 0}
+    .about-copy p{color:var(--muted);font-size:17px}
+    .checklist{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:24px}
+    .check{
+      padding:13px;border:1px solid var(--line);border-radius:12px;
+      background:#fff;font-weight:800;font-size:14px
+    }
+
+    /* =================== SERVICES =================== */
+    .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+    .service-card{
+      border:1px solid var(--line);border-radius:var(--radius);
+      padding:27px;background:#fff;
+      box-shadow:0 10px 30px rgba(7,27,20,.055);
+      transition:.22s
+    }
+    .service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .service-icon{
+      width:54px;height:54px;border-radius:15px;
+      display:grid;place-items:center;background:#e9f7ef;
+      color:var(--green);font-size:27px;margin-bottom:18px
+    }
+    .service-card h3{margin:0 0 9px;color:var(--dark);font-size:22px}
+    .service-card p{margin:0;color:var(--muted)}
+
+    /* =================== PROJECT TYPES =================== */
+    .project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .project{
+      min-height:290px;border-radius:22px;padding:24px;
+      display:flex;flex-direction:column;justify-content:flex-end;
+      color:#fff;position:relative;overflow:hidden
+    }
+    .project:before{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(180deg,transparent 20%,rgba(0,0,0,.72) 100%)
+    }
+    .project > *{position:relative;z-index:2}
+    .project h3{font-size:24px;margin:0 0 5px}
+    .project p{margin:0;color:#d6e2dd;font-size:14px}
+    .p1{background:linear-gradient(145deg,#3a7961,#0b3d2c)}
+    .p2{background:linear-gradient(145deg,#4b6f81,#173642)}
+    .p3{background:linear-gradient(145deg,#6f6b3c,#2c3217)}
+    .p4{background:linear-gradient(145deg,#725d52,#33231d)}
+
+    /* =================== CALCULATOR =================== */
+    .calc-wrap{
+      display:grid;grid-template-columns:1.05fr .95fr;gap:25px;
+      background:#fff;border:1px solid var(--line);
+      border-radius:30px;padding:28px;box-shadow:var(--shadow)
+    }
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .field.full{grid-column:1/-1}
+    label{display:block;font-size:13px;font-weight:900;margin-bottom:7px}
+    input,select{
+      width:100%;padding:14px 15px;border:1px solid #ccdcd3;
+      border-radius:12px;background:#fbfdfc;outline:none
+    }
+    input:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(13,122,72,.1)}
+    .help{font-size:12px;color:var(--muted);margin-top:5px}
+    .result{
+      background:linear-gradient(145deg,#061b13,#0b623a);
+      border-radius:23px;padding:25px;color:#fff
+    }
+    .result h3{margin:0 0 4px;font-size:27px}
+    .result p{color:#cbded5}
+    .results{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:19px 0}
+    .metric{
+      padding:15px;border-radius:14px;background:rgba(255,255,255,.085);
+      border:1px solid rgba(255,255,255,.11)
+    }
+    .metric span{display:block;color:#bad2c6;font-size:12px}
+    .metric strong{display:block;font-size:21px;margin-top:3px}
+    .disclaimer{font-size:11px;color:#abc6ba;margin-top:14px}
+
+    /* =================== PRODUCTS =================== */
+    .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .product{
+      padding:25px;border:1px solid var(--line);border-radius:22px;background:#fff
+    }
+    .product-top{
+      height:170px;border-radius:17px;
+      background:linear-gradient(145deg,#edf7f1,#dcece4);
+      display:grid;place-items:center;font-size:68px;margin-bottom:20px
+    }
+    .product h3{margin:0 0 8px;color:var(--dark)}
+    .product p{margin:0;color:var(--muted)}
+
+    /* =================== PROCESS =================== */
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+    .step{padding:24px;border-left:3px solid var(--green);background:#fff;border-radius:0 18px 18px 0}
+    .step b{font-size:12px;color:var(--green);letter-spacing:.08em}
+    .step h3{margin:8px 0 8px;color:var(--dark)}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+
+    /* =================== FAQ =================== */
+    .faq{max-width:900px;margin:auto}
+    details{
+      border:1px solid var(--line);border-radius:16px;padding:17px 19px;
+      margin-bottom:11px;background:#fff
+    }
+    summary{font-weight:900;cursor:pointer;color:var(--dark)}
+    details p{color:var(--muted);margin-bottom:3px}
+
+    /* =================== CTA / CONTACT =================== */
+    .cta{
+      background:
+        radial-gradient(circle at 92% 20%,rgba(255,195,31,.22),transparent 20%),
+        linear-gradient(140deg,var(--dark),var(--green));
+      border-radius:31px;padding:45px;color:#fff;
+      display:grid;grid-template-columns:1.15fr .85fr;gap:25px;align-items:center
+    }
+    .cta h2{font-size:clamp(31px,4vw,48px);line-height:1.02;margin:0 0 10px}
+    .cta p{color:#cfe0d8;margin:0}
+    .cta-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+
+    footer{background:#05110d;color:#b8c8c1;padding:52px 0 25px}
+    .footer-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:34px}
+    footer h4{color:#fff;margin-top:0}
+    footer a:hover{color:#fff}
+    .footer-bottom{
+      border-top:1px solid #173129;margin-top:30px;padding-top:19px;
+      font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap
+    }
+
+    .float-wa{
+      position:fixed;right:19px;bottom:19px;z-index:1200;
+      width:60px;height:60px;border-radius:50%;
+      display:grid;place-items:center;background:#25D366;color:#fff;
+      font-size:29px;box-shadow:0 15px 35px rgba(0,0,0,.27)
+    }
+
+    @media(max-width:1000px){
+      .menu{display:none}
+      .hero-grid,.about-grid,.calc-wrap,.cta{grid-template-columns:1fr}
+      .cards-3{grid-template-columns:1fr 1fr}
+      .project-grid,.process-grid{grid-template-columns:1fr 1fr}
+      .strip-grid{grid-template-columns:1fr 1fr}
+      .strip-item:nth-child(2){border-right:0}
+      .strip-item{border-bottom:1px solid var(--line)}
+      .cta-actions{justify-content:flex-start}
+    }
+    @media(max-width:640px){
+      .section{padding:65px 0}
+      .topbar{display:none}
+      .nav{min-height:70px}
+      .hero-grid{padding:60px 0}
+      .hero{min-height:auto}
+      .solar-visual{padding:22px}
+      .visual-stats,.strip-grid,.cards-3,.project-grid,.process-grid,
+      .form-grid,.results,.product-grid,.footer-grid,.checklist{grid-template-columns:1fr}
+      .strip-item{border-right:0}
+      .field.full{grid-column:auto}
+      .calc-wrap{padding:18px}
+      .cta{padding:28px}
+      .logo-text strong{font-size:15px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>{{general.texto2}}</span>
+      <span>📲 {{telefono1}} &nbsp; {{general.texto3}} &nbsp; {{telefono2}}</span>
+    </div>
+  </div>
+
+  <!-- ===== MENÚ PRINCIPAL ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#inicio">
+        <!-- REEMPLAZA ESTE SÍMBOLO POR TU LOGO SI QUIERES -->
+        <div class="logo-symbol">{{general.texto4}}</div>
+        <div class="logo-text">
+          <strong>{{general.texto5}}</strong>
+          <small>{{general.texto6}}</small>
+        </div>
+      </a>
+
+      <nav class="menu">
+        <a href="#nosotros">{{general.texto7}}</a>
+        <a href="#soluciones">{{general.texto8}}</a>
+        <a href="#proyectos">{{general.texto9}}</a>
+        <a href="#calculadora">{{general.texto10}}</a>
+        <a href="#productos">{{general.texto11}}</a>
+        <a href="#contacto">{{general.texto12}}</a>
+        <a class="nav-cta" href="https://wa.me/{{contacto.whatsapp1}}?text=Hola%20Puregreen%20Smart%20Solar%20SRL,%20quiero%20una%20cotizaci%C3%B3n%20solar." target="_blank">{{general.texto13}}</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PORTADA / HERO ===== -->
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="tag">{{seccion1.texto1}}</span>
+          <h1>{{seccion1.texto2}}<br>{{seccion1.texto3}}<br><span>{{seccion1.texto4}}</span></h1>
+          <p class="hero-copy">
+            {{seccion1.texto5}}
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-yellow" href="#calculadora">{{seccion1.texto6}}</a>
+            <a class="btn btn-green" href="https://wa.me/{{contacto.whatsapp1}}?text=Hola%20Puregreen%20Smart%20Solar%20SRL,%20quiero%20informaci%C3%B3n%20sobre%20paneles%20solares." target="_blank">{{seccion1.texto7}}</a>
+          </div>
+
+          <div class="hero-points">
+            <span>{{seccion1.texto8}}</span>
+            <span>{{seccion1.texto9}}</span>
+            <span>{{seccion1.texto10}}</span>
+            <span>{{seccion1.texto11}}</span>
+          </div>
+        </div>
+
+        <!-- VISUAL SOLAR SIN DEPENDER DE FOTOS EXTERNAS -->
+        <div class="solar-visual">
+          <div class="sun-orb"></div>
+          <h3 style="font-size:31px;margin:0 0 6px">{{seccion1.texto12}}</h3>
+          <p style="color:#d6e7de;margin-top:0">{{seccion1.texto13}}</p>
+
+          <div class="panel-array">
+            <div class="panel"></div><div class="panel"></div><div class="panel"></div>
+            <div class="panel"></div><div class="panel"></div><div class="panel"></div>
+          </div>
+
+          <div class="visual-stats">
+            <div class="visual-stat"><strong>{{seccion1.texto14}}</strong><small>{{seccion1.texto15}}</small></div>
+            <div class="visual-stat"><strong>{{seccion1.texto16}}</strong><small>{{seccion1.texto17}}</small></div>
+            <div class="visual-stat"><strong>{{seccion1.texto18}}</strong><small>{{seccion1.texto19}}</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FRANJA DE CONFIANZA ===== -->
+    <div class="strip">
+      <div class="container strip-grid">
+        <div class="strip-item"><strong>{{seccion1.texto20}}</strong><span>{{seccion1.texto21}}</span></div>
+        <div class="strip-item"><strong>{{seccion1.texto22}}</strong><span>{{seccion1.texto23}}</span></div>
+        <div class="strip-item"><strong>{{seccion1.texto24}}</strong><span>{{seccion1.texto25}}</span></div>
+        <div class="strip-item"><strong>{{seccion1.texto26}}</strong><span>{{seccion1.texto27}}</span></div>
+      </div>
+    </div>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section id="nosotros" class="section">
+      <div class="container about-grid">
+        <div class="about-card">
+          <span style="font-size:55px">{{nosotros.texto1}}</span>
+          <h3>{{nosotros.texto2}}</h3>
+          <p>
+            {{nosotros.texto3}}
+          </p>
+        </div>
+
+        <div class="about-copy">
+          <span class="tag">{{nosotros.texto4}}</span>
+          <h2>{{nosotros.texto5}}</h2>
+          <p>
+            {{nosotros.texto6}}
+          </p>
+          <p>
+            {{nosotros.texto7}}
+          </p>
+
+          <div class="checklist">
+            <div class="check">{{nosotros.texto8}}</div>
+            <div class="check">{{nosotros.texto9}}</div>
+            <div class="check">{{nosotros.texto10}}</div>
+            <div class="check">{{nosotros.texto11}}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUCIONES ===== -->
+    <section id="soluciones" class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">{{soluciones.texto1}}</span>
+          <h2>{{soluciones.texto2}}</h2>
+          <p>{{soluciones.texto3}}</p>
+        </div>
+
+        <div class="cards-3">
+          <article class="service-card">
+            <div class="service-icon">{{soluciones.texto4}}</div>
+            <h3>{{soluciones.texto5}}</h3>
+            <p>{{soluciones.texto6}}</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">{{soluciones.texto7}}</div>
+            <h3>{{soluciones.texto8}}</h3>
+            <p>{{soluciones.texto9}}</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">{{soluciones.texto10}}</div>
+            <h3>{{soluciones.texto11}}</h3>
+            <p>{{soluciones.texto12}}</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">{{soluciones.texto13}}</div>
+            <h3>{{soluciones.texto14}}</h3>
+            <p>{{soluciones.texto15}}</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">{{soluciones.texto16}}</div>
+            <h3>{{soluciones.texto17}}</h3>
+            <p>{{soluciones.texto18}}</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">{{soluciones.texto19}}</div>
+            <h3>{{soluciones.texto20}}</h3>
+            <p>{{soluciones.texto21}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORÍAS DE PROYECTOS ===== -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">{{proyectos.texto1}}</span>
+          <h2>{{proyectos.texto2}}</h2>
+          <p>{{proyectos.texto3}}</p>
+        </div>
+
+        <div class="project-grid">{{instalaciones}}</div>
+      </div>
+    </section>
+
+    <!-- ===== CALCULADORA SOLAR ===== -->
+    <section id="calculadora" class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">{{calculadora.texto1}}</span>
+          <h2>{{calculadora.texto2}}</h2>
+          <p>{{calculadora.texto3}}</p>
+        </div>
+
+        <div class="calc-wrap">
+          <div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="factura">{{calculadora.texto4}}</label>
+                <input id="factura" type="number" min="0" placeholder="Ej.: 15000">
+                <div class="help">{{calculadora.texto5}}</div>
+              </div>
+
+              <div class="field">
+                <label for="consumo">{{calculadora.texto6}}</label>
+                <input id="consumo" type="number" min="0" placeholder="Ej.: 950">
+                <div class="help">{{calculadora.texto7}}</div>
+              </div>
+
+              <div class="field">
+                <label for="panel">{{calculadora.texto8}}</label>
+                <select id="panel">
+                  <option value="450">450 W</option>
+                  <option value="500">500 W</option>
+                  <option value="550">550 W</option>
+                  <option value="580">580 W</option>
+                  <option value="600">600 W</option>
+                  <option value="610">610 W</option>
+                  <option value="620">620 W</option>
+                  <option value="640" selected>640 W</option>
+                  <option value="650">650 W</option>
+                  <option value="700">700 W</option>
+                  <option value="710">710 W</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="cobertura">{{calculadora.texto9}}</label>
+                <select id="cobertura">
+                  <option value="50">50%</option>
+                  <option value="75">75%</option>
+                  <option value="90">90%</option>
+                  <option value="100" selected>100%</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="precioKwh">{{calculadora.texto10}}</label>
+                <input id="precioKwh" type="number" value="15" min="1" step="0.01">
+                <div class="help">{{calculadora.texto11}}</div>
+              </div>
+
+              <div class="field">
+                <label for="horasSol">{{calculadora.texto12}}</label>
+                <input id="horasSol" type="number" value="5.5" min="1" max="10" step="0.1">
+              </div>
+
+              <div class="field full">
+                <label for="eficiencia">{{calculadora.texto13}}</label>
+                <input id="eficiencia" type="number" value="80" min="50" max="100">
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="btn btn-yellow" onclick="calcularSolar()">{{calculadora.texto14}}</button>
+              <button class="btn btn-outline" onclick="limpiarCalculo()">{{calculadora.texto15}}</button>
+            </div>
+          </div>
+
+          <aside class="result">
+            <h3>{{calculadora.texto16}}</h3>
+            <p id="introResultado">Completa los datos para ver una estimación preliminar.</p>
+
+            <div class="results">
+              <div class="metric"><span>{{calculadora.texto17}}</span><strong id="rConsumo">—</strong></div>
+              <div class="metric"><span>{{calculadora.texto18}}</span><strong id="rPaneles">—</strong></div>
+              <div class="metric"><span>{{calculadora.texto19}}</span><strong id="rPotencia">—</strong></div>
+              <div class="metric"><span>{{calculadora.texto20}}</span><strong id="rProduccion">—</strong></div>
+              <div class="metric"><span>{{calculadora.texto21}}</span><strong id="rDiario">—</strong></div>
+              <div class="metric"><span>{{calculadora.texto22}}</span><strong id="rCobertura">—</strong></div>
+            </div>
+
+            <a id="waResultado1" class="btn btn-yellow" style="width:100%" target="_blank"
+               href="https://wa.me/{{contacto.whatsapp1}}">{{calculadora.texto23}}</a>
+            <a id="waResultado2" class="btn btn-green" style="width:100%;margin-top:9px;background:#25D366" target="_blank"
+               href="https://wa.me/{{contacto.whatsapp2}}">{{calculadora.texto24}}</a>
+
+            <div class="disclaimer">
+              {{calculadora.texto25}}
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTOS ===== -->
+    <section id="productos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">{{productos.texto1}}</span>
+          <h2>{{productos.texto2}}</h2>
+          <p>{{productos.texto3}}</p>
+        </div>
+
+        <div class="product-grid">{{catalogo}}</div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESO ===== -->
+    <section class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">{{seccion7.texto1}}</span>
+          <h2>{{seccion7.texto2}}</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="step"><b>{{seccion7.texto3}}</b><h3>{{seccion7.texto4}}</h3><p>{{seccion7.texto5}}</p></div>
+          <div class="step"><b>{{seccion7.texto6}}</b><h3>{{seccion7.texto7}}</h3><p>{{seccion7.texto8}}</p></div>
+          <div class="step"><b>{{seccion7.texto9}}</b><h3>{{seccion7.texto10}}</h3><p>{{seccion7.texto11}}</p></div>
+          <div class="step"><b>{{seccion7.texto12}}</b><h3>{{seccion7.texto13}}</h3><p>{{seccion7.texto14}}</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">{{seccion8.texto1}}</span>
+          <h2>{{seccion8.texto2}}</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>{{seccion8.texto3}}</summary>
+            <p>{{seccion8.texto4}}</p>
+          </details>
+          <details>
+            <summary>{{seccion8.texto5}}</summary>
+            <p>{{seccion8.texto6}}</p>
+          </details>
+          <details>
+            <summary>{{seccion8.texto7}}</summary>
+            <p>{{seccion8.texto8}}</p>
+          </details>
+          <details>
+            <summary>{{seccion8.texto9}}</summary>
+            <p>{{seccion8.texto10}}</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <span class="tag" style="background:rgba(255,255,255,.12);color:#fff">{{contacto.texto1}}</span>
+            <h2>{{contacto.texto2}}</h2>
+            <p>{{contacto.texto3}}</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-yellow" target="_blank"
+               href="https://wa.me/{{contacto.whatsapp1}}?text=Hola%20Puregreen%20Smart%20Solar%20SRL,%20quiero%20cotizar%20un%20sistema%20solar.">
+               {{telefono1}}
+            </a>
+            <a class="btn btn-green" style="background:#25D366" target="_blank"
+               href="https://wa.me/{{contacto.whatsapp2}}?text=Hola%20Puregreen%20Smart%20Solar%20SRL,%20quiero%20cotizar%20un%20sistema%20solar.">
+               {{telefono2}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>{{pie.texto1}}</h4>
+          <p>{{pie.texto2}}</p>
+          <p><strong style="color:#fff">{{pie.texto3}}</strong></p>
+        </div>
+        <div>
+          <h4>{{pie.texto4}}</h4>
+          <p><a href="tel:+{{contacto.whatsapp1}}">{{telefono1}}</a></p>
+          <p><a href="tel:+{{contacto.whatsapp2}}">{{telefono2}}</a></p>
+        </div>
+        <div>
+          <h4>{{pie.texto5}}</h4>
+          <p><a href="#soluciones">{{pie.texto6}}</a></p>
+          <p><a href="#proyectos">{{pie.texto7}}</a></p>
+          <p><a href="#calculadora">{{pie.texto8}}</a></p>
+          <p><a href="#contacto">{{pie.texto9}}</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>{{pie.texto10}} <span id="year"></span> {{pie.texto11}}</span>
+        <span>{{pie.texto12}}</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BOTÓN FLOTANTE ===== -->
+  <a class="float-wa"
+     href="https://wa.me/{{contacto.whatsapp1}}?text=Hola%20Puregreen%20Smart%20Solar%20SRL,%20quiero%20informaci%C3%B3n."
+     target="_blank" aria-label="WhatsApp">{{pie.texto13}}</a>
+
+  <script>
+    /* =====================================================
+       CONFIGURACIÓN PRINCIPAL
+       CAMBIA AQUÍ TUS WHATSAPP SI ALGÚN DÍA CAMBIAN.
+       ===================================================== */
+    const WHATSAPP_1 = "{{contacto.whatsapp1}}";
+    const WHATSAPP_2 = "{{contacto.whatsapp2}}";
+
+    function calcularSolar(){
+      const factura = parseFloat(document.getElementById("factura").value) || 0;
+      const consumoDirecto = parseFloat(document.getElementById("consumo").value) || 0;
+      const panelW = parseFloat(document.getElementById("panel").value) || 640;
+      const cobertura = (parseFloat(document.getElementById("cobertura").value) || 100) / 100;
+      const precioKwh = parseFloat(document.getElementById("precioKwh").value) || 15;
+      const horasSol = parseFloat(document.getElementById("horasSol").value) || 5.5;
+      const eficiencia = (parseFloat(document.getElementById("eficiencia").value) || 80) / 100;
+
+      let consumoMensual = consumoDirecto > 0
+        ? consumoDirecto
+        : (factura > 0 ? factura / precioKwh : 0);
+
+      if(consumoMensual <= 0){
+        alert("Ingresa tu consumo mensual en kWh o el monto de tu factura.");
+        return;
+      }
+
+      const consumoObjetivo = consumoMensual * cobertura;
+      const produccionPanelMes = (panelW / 1000) * horasSol * 30 * eficiencia;
+      const paneles = Math.ceil(consumoObjetivo / produccionPanelMes);
+      const potencia = paneles * panelW / 1000;
+      const produccion = paneles * produccionPanelMes;
+      const diario = consumoMensual / 30;
+
+      document.getElementById("rConsumo").textContent = consumoMensual.toFixed(0) + " kWh/mes";
+      document.getElementById("rPaneles").textContent = paneles + " × " + panelW + " W";
+      document.getElementById("rPotencia").textContent = potencia.toFixed(2) + " kWp";
+      document.getElementById("rProduccion").textContent = produccion.toFixed(0) + " kWh/mes";
+      document.getElementById("rDiario").textContent = diario.toFixed(1) + " kWh/día";
+      document.getElementById("rCobertura").textContent = Math.round(cobertura*100) + "%";
+      document.getElementById("introResultado").textContent =
+        "Estimación calculada con paneles de " + panelW + " W.";
+
+      const texto =
+        "Hola Puregreen Smart Solar SRL.\n\n" +
+        "Hice un cálculo en su página web y quiero una cotización.\n\n" +
+        "Consumo estimado: " + consumoMensual.toFixed(0) + " kWh/mes\n" +
+        "Panel: " + panelW + " W\n" +
+        "Cantidad estimada: " + paneles + " paneles\n" +
+        "Potencia: " + potencia.toFixed(2) + " kWp\n" +
+        "Producción estimada: " + produccion.toFixed(0) + " kWh/mes\n" +
+        "Cobertura objetivo: " + Math.round(cobertura*100) + "%\n\n" +
+        "Deseo recibir una propuesta.";
+
+      const msg = encodeURIComponent(texto);
+      document.getElementById("waResultado1").href =
+        "https://wa.me/" + WHATSAPP_1 + "?text=" + msg;
+      document.getElementById("waResultado2").href =
+        "https://wa.me/" + WHATSAPP_2 + "?text=" + msg;
+    }
+
+    function limpiarCalculo(){
+      document.getElementById("factura").value = "";
+      document.getElementById("consumo").value = "";
+      ["rConsumo","rPaneles","rPotencia","rProduccion","rDiario","rCobertura"]
+        .forEach(id => document.getElementById(id).textContent = "—");
+      document.getElementById("introResultado").textContent =
+        "Completa los datos para ver una estimación preliminar.";
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

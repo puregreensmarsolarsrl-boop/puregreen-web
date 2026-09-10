@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "titulo": "Paneles fotovoltaicos",
+      "descripcion": "Alta potencia para aprovechar mejor el espacio disponible.",
+      "foto": "",
+      "alternativo": "Paneles fotovoltaicos",
+      "icono": "☀️"
+    },
+    {
+      "titulo": "Inversores híbridos",
+      "descripcion": "Gestión de paneles, red eléctrica y baterías dentro de una misma solución.",
+      "foto": "",
+      "alternativo": "Inversores híbridos",
+      "icono": "⚡"
+    },
+    {
+      "titulo": "Baterías de litio y gel",
+      "descripcion": "Almacenamiento dimensionado según autonomía y cargas prioritarias.",
+      "foto": "",
+      "alternativo": "Baterías de litio y gel",
+      "icono": "🔋"
+    }
+  ]
+}

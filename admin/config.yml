@@ -1,0 +1,914 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "CAMBIAR_USUARIO/CAMBIAR_REPOSITORIO",
+    "branch": "main"
+  },
+  "locale": "es",
+  "media_folder": "uploads",
+  "public_folder": "/uploads",
+  "site_url": "https://charming-peony-04a777.netlify.app",
+  "display_url": "https://charming-peony-04a777.netlify.app",
+  "collections": [
+    {
+      "name": "web",
+      "label": "Mi página web",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "general",
+          "label": "Cabecera y título de navegador",
+          "file": "content/general.json",
+          "fields": [
+            {
+              "label": "Puregreen Smart Solar SRL | Energía Solar Inteligente",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "☀️ Soluciones de energía solar en República Dominicana",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "|",
+              "name": "texto3",
+              "widget": "string"
+            },
+            {
+              "label": "☀",
+              "name": "texto4",
+              "widget": "string"
+            },
+            {
+              "label": "PUREGREEN SMART SOLAR",
+              "name": "texto5",
+              "widget": "string"
+            },
+            {
+              "label": "SRL",
+              "name": "texto6",
+              "widget": "string"
+            },
+            {
+              "label": "Nosotros",
+              "name": "texto7",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones",
+              "name": "texto8",
+              "widget": "string"
+            },
+            {
+              "label": "Proyectos",
+              "name": "texto9",
+              "widget": "string"
+            },
+            {
+              "label": "Calculadora",
+              "name": "texto10",
+              "widget": "string"
+            },
+            {
+              "label": "Productos",
+              "name": "texto11",
+              "widget": "string"
+            },
+            {
+              "label": "Contacto",
+              "name": "texto12",
+              "widget": "string"
+            },
+            {
+              "label": "Cotizar ahora",
+              "name": "texto13",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "seccion1",
+          "label": "Portada y ventajas",
+          "file": "content/seccion1.json",
+          "fields": [
+            {
+              "label": "⚡ ENERGÍA SOLAR INTELIGENTE",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Tu energía.",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "Tu ahorro.",
+              "name": "texto3",
+              "widget": "string"
+            },
+            {
+              "label": "Tu futuro solar.",
+              "name": "texto4",
+              "widget": "string"
+            },
+            {
+              "label": "Puregreen Smart Solar SRL desarrolla soluciones solares para viviendas, vil",
+              "name": "texto5",
+              "widget": "text"
+            },
+            {
+              "label": "☀️ Calcular mi sistema",
+              "name": "texto6",
+              "widget": "string"
+            },
+            {
+              "label": "💬 Hablar con un asesor",
+              "name": "texto7",
+              "widget": "string"
+            },
+            {
+              "label": "✓ Residencial",
+              "name": "texto8",
+              "widget": "string"
+            },
+            {
+              "label": "✓ Comercial",
+              "name": "texto9",
+              "widget": "string"
+            },
+            {
+              "label": "✓ Sistemas híbridos",
+              "name": "texto10",
+              "widget": "string"
+            },
+            {
+              "label": "✓ Respaldo con baterías",
+              "name": "texto11",
+              "widget": "string"
+            },
+            {
+              "label": "Convierte el sol en energía útil.",
+              "name": "texto12",
+              "widget": "string"
+            },
+            {
+              "label": "Diseño pensado alrededor de tu consumo real.",
+              "name": "texto13",
+              "widget": "string"
+            },
+            {
+              "label": "☀️",
+              "name": "texto14",
+              "widget": "string"
+            },
+            {
+              "label": "Paneles solares",
+              "name": "texto15",
+              "widget": "string"
+            },
+            {
+              "label": "⚡",
+              "name": "texto16",
+              "widget": "string"
+            },
+            {
+              "label": "Inversores",
+              "name": "texto17",
+              "widget": "string"
+            },
+            {
+              "label": "🔋",
+              "name": "texto18",
+              "widget": "string"
+            },
+            {
+              "label": "Baterías",
+              "name": "texto19",
+              "widget": "string"
+            },
+            {
+              "label": "Diseño personalizado",
+              "name": "texto20",
+              "widget": "string"
+            },
+            {
+              "label": "Según consumo y objetivos.",
+              "name": "texto21",
+              "widget": "string"
+            },
+            {
+              "label": "Cálculo solar",
+              "name": "texto22",
+              "widget": "string"
+            },
+            {
+              "label": "Estimación directamente en la web.",
+              "name": "texto23",
+              "widget": "string"
+            },
+            {
+              "label": "Contacto rápido",
+              "name": "texto24",
+              "widget": "string"
+            },
+            {
+              "label": "Resultado directo por WhatsApp.",
+              "name": "texto25",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones escalables",
+              "name": "texto26",
+              "widget": "string"
+            },
+            {
+              "label": "Hogar, negocio y proyectos mayores.",
+              "name": "texto27",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "nosotros",
+          "label": "Quiénes somos",
+          "file": "content/nosotros.json",
+          "fields": [
+            {
+              "label": "🌱",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Puregreen Smart Solar SRL",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "Energía solar diseñada para ayudarte a controlar mejor tus costos eléctrico",
+              "name": "texto3",
+              "widget": "text"
+            },
+            {
+              "label": "QUIÉNES SOMOS",
+              "name": "texto4",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones solares pensadas para la realidad de cada cliente.",
+              "name": "texto5",
+              "widget": "string"
+            },
+            {
+              "label": "Evaluamos consumo, cargas, disponibilidad de espacio, potencia de paneles, ",
+              "name": "texto6",
+              "widget": "text"
+            },
+            {
+              "label": "Nuestra meta es que el cliente entienda qué necesita antes de invertir, con",
+              "name": "texto7",
+              "widget": "text"
+            },
+            {
+              "label": "✓ Evaluación de consumo",
+              "name": "texto8",
+              "widget": "string"
+            },
+            {
+              "label": "✓ Dimensionamiento solar",
+              "name": "texto9",
+              "widget": "string"
+            },
+            {
+              "label": "✓ Inversores y protecciones",
+              "name": "texto10",
+              "widget": "string"
+            },
+            {
+              "label": "✓ Bancos de baterías",
+              "name": "texto11",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "soluciones",
+          "label": "Servicios",
+          "file": "content/soluciones.json",
+          "fields": [
+            {
+              "label": "NUESTRAS SOLUCIONES",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Todo lo esencial para tu proyecto solar.",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "Servicios para diseñar, instalar y mantener tu sistema solar.",
+              "name": "texto3",
+              "widget": "string"
+            },
+            {
+              "label": "☀️",
+              "name": "texto4",
+              "widget": "string"
+            },
+            {
+              "label": "Paneles solares",
+              "name": "texto5",
+              "widget": "string"
+            },
+            {
+              "label": "Dimensionamiento de arreglos fotovoltaicos según el consumo mensual y espac",
+              "name": "texto6",
+              "widget": "string"
+            },
+            {
+              "label": "⚡",
+              "name": "texto7",
+              "widget": "string"
+            },
+            {
+              "label": "Inversores solares",
+              "name": "texto8",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones on-grid, híbridas y de respaldo de acuerdo con las característic",
+              "name": "texto9",
+              "widget": "text"
+            },
+            {
+              "label": "🔋",
+              "name": "texto10",
+              "widget": "string"
+            },
+            {
+              "label": "Baterías",
+              "name": "texto11",
+              "widget": "string"
+            },
+            {
+              "label": "Configuraciones de almacenamiento para cargas prioritarias y mayor continui",
+              "name": "texto12",
+              "widget": "text"
+            },
+            {
+              "label": "🏠",
+              "name": "texto13",
+              "widget": "string"
+            },
+            {
+              "label": "Residencial",
+              "name": "texto14",
+              "widget": "string"
+            },
+            {
+              "label": "Sistemas para casas, apartamentos y villas que buscan reducir su factura el",
+              "name": "texto15",
+              "widget": "string"
+            },
+            {
+              "label": "🏢",
+              "name": "texto16",
+              "widget": "string"
+            },
+            {
+              "label": "Comercial",
+              "name": "texto17",
+              "widget": "string"
+            },
+            {
+              "label": "Alternativas para oficinas, tiendas, restaurantes y otros negocios con cons",
+              "name": "texto18",
+              "widget": "string"
+            },
+            {
+              "label": "🛠️",
+              "name": "texto19",
+              "widget": "string"
+            },
+            {
+              "label": "Soporte técnico",
+              "name": "texto20",
+              "widget": "string"
+            },
+            {
+              "label": "Evaluación, recomendaciones técnicas, ampliaciones y revisión general de si",
+              "name": "texto21",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "proyectos",
+          "label": "Título de proyectos",
+          "file": "content/proyectos.json",
+          "fields": [
+            {
+              "label": "PROYECTOS",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones para diferentes necesidades.",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones solares para hogares y negocios.",
+              "name": "texto3",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "calculadora",
+          "label": "Textos de calculadora",
+          "file": "content/calculadora.json",
+          "fields": [
+            {
+              "label": "CALCULADORA SOLAR",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Descubre cuántos paneles podrías necesitar.",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "El consumo real en kWh es el dato recomendado. Si no lo conoces, puedes hac",
+              "name": "texto3",
+              "widget": "text"
+            },
+            {
+              "label": "Factura mensual (RD$)",
+              "name": "texto4",
+              "widget": "string"
+            },
+            {
+              "label": "Opcional si conoces tus kWh.",
+              "name": "texto5",
+              "widget": "string"
+            },
+            {
+              "label": "Consumo mensual (kWh)",
+              "name": "texto6",
+              "widget": "string"
+            },
+            {
+              "label": "Usa este dato si aparece en tu factura.",
+              "name": "texto7",
+              "widget": "string"
+            },
+            {
+              "label": "Potencia del panel",
+              "name": "texto8",
+              "widget": "string"
+            },
+            {
+              "label": "Cobertura deseada",
+              "name": "texto9",
+              "widget": "string"
+            },
+            {
+              "label": "Precio estimado por kWh (RD$)",
+              "name": "texto10",
+              "widget": "string"
+            },
+            {
+              "label": "Solo se usa cuando calculas desde el monto pagado.",
+              "name": "texto11",
+              "widget": "string"
+            },
+            {
+              "label": "Horas solares pico/día",
+              "name": "texto12",
+              "widget": "string"
+            },
+            {
+              "label": "Eficiencia global estimada (%)",
+              "name": "texto13",
+              "widget": "string"
+            },
+            {
+              "label": "☀️ Calcular sistema",
+              "name": "texto14",
+              "widget": "string"
+            },
+            {
+              "label": "Limpiar",
+              "name": "texto15",
+              "widget": "string"
+            },
+            {
+              "label": "Tu estimación",
+              "name": "texto16",
+              "widget": "string"
+            },
+            {
+              "label": "Consumo mensual",
+              "name": "texto17",
+              "widget": "string"
+            },
+            {
+              "label": "Paneles recomendados",
+              "name": "texto18",
+              "widget": "string"
+            },
+            {
+              "label": "Potencia instalada",
+              "name": "texto19",
+              "widget": "string"
+            },
+            {
+              "label": "Producción estimada",
+              "name": "texto20",
+              "widget": "string"
+            },
+            {
+              "label": "Consumo diario",
+              "name": "texto21",
+              "widget": "string"
+            },
+            {
+              "label": "Cobertura objetivo",
+              "name": "texto22",
+              "widget": "string"
+            },
+            {
+              "label": "Enviar resultado por WhatsApp",
+              "name": "texto23",
+              "widget": "string"
+            },
+            {
+              "label": "WhatsApp alternativo",
+              "name": "texto24",
+              "widget": "string"
+            },
+            {
+              "label": "* Cálculo orientativo. El diseño definitivo debe considerar factura real, p",
+              "name": "texto25",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "productos",
+          "label": "Título del catálogo",
+          "file": "content/productos.json",
+          "fields": [
+            {
+              "label": "TECNOLOGÍA",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Componentes para construir tu sistema.",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "Consulta disponibilidad y opciones para tu proyecto por WhatsApp.",
+              "name": "texto3",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "seccion7",
+          "label": "Nuestro proceso",
+          "file": "content/seccion7.json",
+          "fields": [
+            {
+              "label": "NUESTRO PROCESO",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "De tu factura a una solución solar.",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "PASO 01",
+              "name": "texto3",
+              "widget": "string"
+            },
+            {
+              "label": "Consumo",
+              "name": "texto4",
+              "widget": "string"
+            },
+            {
+              "label": "Revisamos tus kWh y comportamiento de las cargas.",
+              "name": "texto5",
+              "widget": "string"
+            },
+            {
+              "label": "PASO 02",
+              "name": "texto6",
+              "widget": "string"
+            },
+            {
+              "label": "Evaluación",
+              "name": "texto7",
+              "widget": "string"
+            },
+            {
+              "label": "Definimos espacio, respaldo y características técnicas.",
+              "name": "texto8",
+              "widget": "string"
+            },
+            {
+              "label": "PASO 03",
+              "name": "texto9",
+              "widget": "string"
+            },
+            {
+              "label": "Propuesta",
+              "name": "texto10",
+              "widget": "string"
+            },
+            {
+              "label": "Seleccionamos una configuración acorde al objetivo.",
+              "name": "texto11",
+              "widget": "string"
+            },
+            {
+              "label": "PASO 04",
+              "name": "texto12",
+              "widget": "string"
+            },
+            {
+              "label": "Instalación",
+              "name": "texto13",
+              "widget": "string"
+            },
+            {
+              "label": "Montaje, verificaciones y puesta en marcha del sistema.",
+              "name": "texto14",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "seccion8",
+          "label": "Preguntas frecuentes",
+          "file": "content/seccion8.json",
+          "fields": [
+            {
+              "label": "PREGUNTAS FRECUENTES",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Información clara antes de decidir.",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "¿La calculadora reemplaza una evaluación técnica?",
+              "name": "texto3",
+              "widget": "string"
+            },
+            {
+              "label": "No. La calculadora ofrece una estimación inicial. Para cotizar correctament",
+              "name": "texto4",
+              "widget": "text"
+            },
+            {
+              "label": "¿Puedo instalar baterías para respaldo?",
+              "name": "texto5",
+              "widget": "string"
+            },
+            {
+              "label": "Sí. La capacidad de las baterías depende de las cargas que quieras mantener",
+              "name": "texto6",
+              "widget": "text"
+            },
+            {
+              "label": "¿Cómo sé cuántos paneles necesito?",
+              "name": "texto7",
+              "widget": "string"
+            },
+            {
+              "label": "El cálculo parte del consumo mensual, potencia de los paneles, radiación so",
+              "name": "texto8",
+              "widget": "text"
+            },
+            {
+              "label": "¿Puedo solicitar una cotización por WhatsApp?",
+              "name": "texto9",
+              "widget": "string"
+            },
+            {
+              "label": "Sí. La calculadora prepara un mensaje con tus resultados y lo envía directa",
+              "name": "texto10",
+              "widget": "text"
+            }
+          ]
+        },
+        {
+          "name": "contacto",
+          "label": "Contacto",
+          "file": "content/contacto.json",
+          "fields": [
+            {
+              "label": "WhatsApp principal (país + número, solo dígitos)",
+              "name": "whatsapp1",
+              "widget": "string",
+              "pattern": [
+                "^[0-9]{8,15}$",
+                "Escribe de 8 a 15 dígitos, sin + ni espacios."
+              ]
+            },
+            {
+              "label": "WhatsApp alternativo",
+              "name": "whatsapp2",
+              "widget": "string",
+              "pattern": [
+                "^[0-9]{8,15}$",
+                "Solo dígitos, incluyendo país."
+              ]
+            },
+            {
+              "label": "PUREGREEN SMART SOLAR SRL",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "¿Quieres comenzar tu proyecto solar?",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "Envíanos tu factura eléctrica o tus kWh mensuales y conversemos sobre una s",
+              "name": "texto3",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "pie",
+          "label": "Pie de página",
+          "file": "content/pie.json",
+          "fields": [
+            {
+              "label": "Puregreen Smart Solar SRL",
+              "name": "texto1",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones solares para hogares, villas, comercios y proyectos en República",
+              "name": "texto2",
+              "widget": "string"
+            },
+            {
+              "label": "“Cuando otros no pueden dar la solución, llega el escuadrón de la solución ",
+              "name": "texto3",
+              "widget": "text"
+            },
+            {
+              "label": "Contacto",
+              "name": "texto4",
+              "widget": "string"
+            },
+            {
+              "label": "Navegación",
+              "name": "texto5",
+              "widget": "string"
+            },
+            {
+              "label": "Soluciones",
+              "name": "texto6",
+              "widget": "string"
+            },
+            {
+              "label": "Proyectos",
+              "name": "texto7",
+              "widget": "string"
+            },
+            {
+              "label": "Calculadora",
+              "name": "texto8",
+              "widget": "string"
+            },
+            {
+              "label": "Contacto",
+              "name": "texto9",
+              "widget": "string"
+            },
+            {
+              "label": "©",
+              "name": "texto10",
+              "widget": "string"
+            },
+            {
+              "label": "Puregreen Smart Solar SRL.",
+              "name": "texto11",
+              "widget": "string"
+            },
+            {
+              "label": "Todos los derechos reservados.",
+              "name": "texto12",
+              "widget": "string"
+            },
+            {
+              "label": "💬",
+              "name": "texto13",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "instalaciones",
+          "label": "Fotos de instalaciones",
+          "file": "content/instalaciones.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Fotos de instalaciones",
+              "widget": "list",
+              "summary": "{{fields.titulo}}",
+              "fields": [
+                {
+                  "label": "Título",
+                  "name": "titulo",
+                  "widget": "string"
+                },
+                {
+                  "label": "Descripción",
+                  "name": "descripcion",
+                  "widget": "text"
+                },
+                {
+                  "label": "Fotografía",
+                  "name": "foto",
+                  "widget": "image",
+                  "required": false,
+                  "allow_multiple": false,
+                  "hint": "Usa JPG, PNG o WebP; recomendado menos de 2 MB."
+                },
+                {
+                  "label": "Descripción de la foto (accesibilidad)",
+                  "name": "alternativo",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "catalogo",
+          "label": "Catálogo",
+          "file": "content/catalogo.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Catálogo",
+              "widget": "list",
+              "summary": "{{fields.titulo}}",
+              "fields": [
+                {
+                  "label": "Título",
+                  "name": "titulo",
+                  "widget": "string"
+                },
+                {
+                  "label": "Descripción",
+                  "name": "descripcion",
+                  "widget": "text"
+                },
+                {
+                  "label": "Fotografía",
+                  "name": "foto",
+                  "widget": "image",
+                  "required": false,
+                  "allow_multiple": false,
+                  "hint": "Usa JPG, PNG o WebP; recomendado menos de 2 MB."
+                },
+                {
+                  "label": "Descripción de la foto (accesibilidad)",
+                  "name": "alternativo",
+                  "widget": "string"
+                },
+                {
+                  "label": "Símbolo si no hay foto",
+                  "name": "icono",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

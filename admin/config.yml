@@ -1,7 +1,7 @@
 {
   "backend": {
     "name": "github",
-    "repo": "CAMBIAR_USUARIO/CAMBIAR_REPOSITORIO",
+    "repo": "puregreensmarsolarsrl-boop/puregreen-web",
     "branch": "main"
   },
   "locale": "es",

@@ -71,3 +71,4 @@ Validación realizada: generación estática, correspondencia entre campos y con
 - Publicaciones automáticas: https://docs.netlify.com/deploy/create-deploys/
 
 Preparado el 9 de septiembre de 2026.
+

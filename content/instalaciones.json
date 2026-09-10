@@ -3,7 +3,7 @@
     {
       "titulo": "Residenciales",
       "descripcion": "Hogares, villas y apartamentos.",
-      "foto": "/uploads/backgrounddefault.jpg",
+      "foto": "",
       "alternativo": "Residenciales"
     },
     {
@@ -26,3 +26,4 @@
     }
   ]
 }
+

@@ -40,3 +40,4 @@ writeFileSync('dist/index.html',output);
 cpSync('admin','dist/admin',{recursive:true});cpSync('uploads','dist/uploads',{recursive:true});
 if(existsSync('_headers'))cpSync('_headers','dist/_headers');
 console.log('Web generada en dist. '+content.instalaciones.items.length+' instalaciones; '+content.catalogo.items.length+' productos.');
+

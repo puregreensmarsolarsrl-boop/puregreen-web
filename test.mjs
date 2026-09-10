@@ -21,3 +21,4 @@ try{
 }finally{
  const resolved=path.resolve(temp);assert(resolved.startsWith(path.resolve(tmpdir())+path.sep)&&path.basename(resolved).startsWith('puregreen-test-'));rmSync(resolved,{recursive:true});
 }
+

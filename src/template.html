@@ -84,6 +84,7 @@
       display:flex;align-items:center;gap:11px;
       font-weight:900;color:var(--dark)
     }
+    .logo-image{width:58px;height:58px;border-radius:50%;object-fit:contain;background:#fff;flex:0 0 auto}
     .logo-symbol{
       width:48px;height:48px;border-radius:15px;
       background:linear-gradient(135deg,var(--green),var(--lime));
@@ -374,8 +375,7 @@
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="#inicio">
-        <!-- REEMPLAZA ESTE SÍMBOLO POR TU LOGO SI QUIERES -->
-        <div class="logo-symbol">{{general.texto4}}</div>
+        <img class="logo-image" src="/uploads/logo-new-pure-green_page-0001.png" alt="Logo Puregreen Smart Solar" decoding="async">
         <div class="logo-text">
           <strong>{{general.texto5}}</strong>
           <small>{{general.texto6}}</small>

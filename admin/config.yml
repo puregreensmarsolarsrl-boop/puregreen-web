@@ -826,6 +826,26 @@
               "widget": "string"
             }
           ]
+        },        {
+          "name": "noticias",
+          "label": "Noticias solares y tecnología",
+          "file": "content/noticias.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Noticias",
+              "widget": "list",
+              "summary": "{{fields.titulo}}",
+              "fields": [
+                {"label":"Título","name":"titulo","widget":"string"},
+                {"label":"Fecha","name":"fecha","widget":"string","required":false},
+                {"label":"Resumen","name":"resumen","widget":"text"},
+                {"label":"Enlace a la noticia completa","name":"url","widget":"string","required":false},
+                {"label":"Imagen","name":"foto","widget":"image","required":false},
+                {"label":"Descripción de la imagen","name":"alternativo","widget":"string","required":false}
+              ]
+            }
+          ]
         },
         {
           "name": "redes",
@@ -944,3 +964,5 @@
     }
   ]
 }
+
+

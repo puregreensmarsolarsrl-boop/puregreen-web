@@ -849,12 +849,31 @@
                   "widget": "text"
                 },
                 {
+                  "label": "Detalle al abrir",
+                  "name": "detalle",
+                  "widget": "text",
+                  "required": false,
+                  "hint": "Texto ampliado que verá el cliente al pulsar la tarjeta."
+                },
+                {
                   "label": "Fotografía",
                   "name": "foto",
                   "widget": "image",
                   "required": false,
                   "allow_multiple": false,
                   "hint": "Usa JPG, PNG o WebP; recomendado menos de 2 MB."
+                },
+                {
+                  "label": "Galería adicional",
+                  "name": "galeria",
+                  "widget": "list",
+                  "required": false,
+                  "field": {
+                    "label": "Fotografía",
+                    "name": "foto",
+                    "widget": "image",
+                    "hint": "Añade tantas fotos como quieras."
+                  }
                 },
                 {
                   "label": "Descripción de la foto (accesibilidad)",
@@ -912,4 +931,3 @@
     }
   ]
 }
-

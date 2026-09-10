@@ -4,26 +4,33 @@
       "titulo": "Residenciales",
       "descripcion": "Hogares, villas y apartamentos.",
       "foto": "",
-      "alternativo": "Residenciales"
+      "alternativo": "Residenciales",
+      "detalle": "Hogares, villas y apartamentos.",
+      "galeria": []
     },
     {
       "titulo": "Comerciales",
       "descripcion": "Negocios, oficinas y comercios.",
       "foto": "",
-      "alternativo": "Comerciales"
+      "alternativo": "Comerciales",
+      "detalle": "Negocios, oficinas y comercios.",
+      "galeria": []
     },
     {
       "titulo": "Hotelería",
       "descripcion": "Soluciones orientadas a operaciones de alto consumo.",
       "foto": "",
-      "alternativo": "Hotelería"
+      "alternativo": "Hotelería",
+      "detalle": "Soluciones orientadas a operaciones de alto consumo.",
+      "galeria": []
     },
     {
       "titulo": "Sistemas de respaldo",
       "descripcion": "Inversores híbridos y almacenamiento.",
       "foto": "",
-      "alternativo": "Sistemas de respaldo"
+      "alternativo": "Sistemas de respaldo",
+      "detalle": "Inversores híbridos y almacenamiento.",
+      "galeria": []
     }
   ]
 }
-

@@ -344,6 +344,7 @@
       .cta-actions{justify-content:flex-start}
     }
     @media(max-width:640px){
+      .social-strip-inner{display:block}.social-links{margin-top:8px;gap:10px}.location-grid{grid-template-columns:1fr}.map-frame{min-height:280px}.map-frame iframe{min-height:280px}
       .section{padding:65px 0}
       .topbar{display:none}
       .nav{min-height:70px}
@@ -394,6 +395,18 @@
     </div>
   </header>
 
+  <!-- ===== REDES, RESEÑAS Y UBICACIÓN ===== -->
+  <div class="social-strip" aria-label="Redes y ubicación">
+    <div class="container social-strip-inner">
+      <span>{{redes.texto}}</span>
+      <div class="social-links">
+        <a href="{{redes.facebook}}" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="{{redes.youtube}}" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="{{redes.google}}" target="_blank" rel="noopener noreferrer">Reseñas de Google</a>
+        <a href="{{redes.maps}}" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
   <!-- ===== PORTADA / HERO ===== -->
   <main id="inicio">
     <section class="hero">
@@ -695,6 +708,18 @@
       </div>
     </section>
 
+    <!-- ===== UBICACIÓN ===== -->
+    <section id="ubicacion" class="section soft">
+      <div class="container location-grid">
+        <div class="section-head">
+          <span class="tag">{{redes.direccion}}</span>
+          <h2>Visítanos o encuentra tu ruta</h2>
+          <p>{{redes.texto}}</p>
+          <a class="btn btn-green" href="{{redes.maps}}" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+        </div>
+        <div class="map-frame"><iframe title="Ubicación de Puregreen Smart Solar" loading="lazy" src="https://www.google.com/maps?q=18.6890873,-68.4455273&z=15&output=embed"></iframe></div>
+      </div>
+    </section>
     <!-- ===== CONTACTO ===== -->
     <section id="contacto" class="section">
       <div class="container">
@@ -827,3 +852,4 @@
   </script>
 </body>
 </html>
+

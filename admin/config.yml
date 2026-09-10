@@ -828,6 +828,19 @@
           ]
         },
         {
+          "name": "redes",
+          "label": "Redes, reseñas y ubicación",
+          "file": "content/redes.json",
+          "fields": [
+            {"label":"Facebook","name":"facebook","widget":"string","required":false},
+            {"label":"YouTube","name":"youtube","widget":"string","required":false},
+            {"label":"Google Business / reseñas","name":"google","widget":"string","required":false},
+            {"label":"Google Maps","name":"maps","widget":"string","required":false},
+            {"label":"Dirección","name":"direccion","widget":"string"},
+            {"label":"Texto introductorio","name":"texto","widget":"text"}
+          ]
+        },
+        {
           "name": "instalaciones",
           "label": "Fotos de instalaciones",
           "file": "content/instalaciones.json",

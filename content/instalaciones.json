@@ -6,14 +6,7 @@
       "foto": "/uploads/whatsapp-image-2026-09-11-at-21.26.46.jpeg",
       "alternativo": "Residenciales",
       "detalle": "Hogares, villas y apartamentos.",
-      "galeria": [
-        "/uploads/whatsapp-image-2026-09-11-at-21.08.41.jpeg",
-        "/uploads/whatsapp-image-2026-09-11-at-21.05.46.jpeg",
-        "/uploads/whatsapp-image-2026-09-11-at-21.05.46-1-.jpeg",
-        "/uploads/whatsapp-image-2026-09-11-at-21.05.45.jpeg",
-        "/uploads/whatsapp-image-2026-09-11-at-20.51.38.jpeg",
-        "/uploads/whatsapp-image-2026-09-11-at-20.49.00.jpeg"
-      ]
+      "galeria": []
     },
     {
       "titulo": "Comerciales",
@@ -38,7 +31,6 @@
       "alternativo": "Sistemas de respaldo",
       "detalle": "Inversores híbridos y almacenamiento.",
       "galeria": []
-    },
-    {}
+    }
   ]
 }
